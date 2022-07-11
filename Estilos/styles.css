@@ -21,6 +21,55 @@ body {
 ;
 }
 
+.rebote {
+    font-family: Arial;
+    background-color: #ae2aec;
+    text-align: center;
+    font-weight: bolder;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px 9px;
+    line-height: 100px;
+    display: flex;
+    : center;
+}
+
+
+.rebote {
+    border-radius: 50%;
+    animation: rebote 1.8s infinite;
+
+}
+
+  /* Creamos la animación (con keyframes) */
+
+@keyframes rebote {
+    
+  /* Colocando un keyframe con el valor translate en 0 al 20%, conseguimos que la transición se tenga que hacer en menos tiempo, lo que acelera el mo vimiento hacia arriba */
+    
+    20%, 40%, 60%, 80% {
+    transform: translateY(0px);
+    } 
+    
+    30% {
+    transform: translateY(-150px);
+    } 
+    
+    50% {
+    transform: translateY(-100px);
+    } 
+    
+    70% {
+    transform: translateY(-40px);
+    } 
+    
+    90% {
+    transform: translateY(-20px);
+    } 
+    
+}
+
 .iframeq {
     width: 100%;
     height: 100%;
